@@ -87,4 +87,51 @@ puts d
 names = %w(John Mary Adam)
 names.each_with_index do |name, index|
   puts "#{name} is at position #{index}"
+end 
+
+names = %w(John Mary Adam)
+names.each_with_index do |name, index|
+  puts "#{name} is at position #{index}"
 end
+puts "Hello Shrey"
+
+ary = %w(a b c d e)
+ary.each_with_index do |name, index| 
+  puts "#{name} is at position #{index + 1}"
+end
+
+names = %w(John Mary Adam)
+names.to_enum.with_index(1).each do |name, index|
+  puts "#{name} is at position #{index}"
+end 
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers.each_slice(3) do |slice|
+  puts slice.join(', ')
+end
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+p numbers.each_slice(3).to_a
+
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+numbers.each_slice(3).with_index(1) do |slice, slice_index|
+  sum = slice.sum 
+  p "Slice #{slice_index}: Sum = #{sum}"
+end
+
+cities = %w(Chicago Seattle Boston Miami)
+sorted_cities = cities.sort
+puts sorted_cities
+
+p "Shreyash"
+
+array = %w(Colorado California New\ York)
+
+puts array
+
+drinks = %w(water tea coffee masala\ chai)
+puts drinks
+
+array_of_symbols = %i[green red blue]
+
+puts array_of_symbols
