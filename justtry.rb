@@ -5,3 +5,5 @@ def greet(&block)
 end
 
 greet { puts "Roger Smith" }
+
+puts "Ruby - base"
